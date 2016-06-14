@@ -1,110 +1,73 @@
 BEAT = 60/95.5
 $measure = 1
-$chords = ["Bm", "G", "Em", "D", "D/F#"]	
+$chords = ["Bm", "G", "Em", "D", "D/F#"]
+$beat_string = "-- "	
 	
 
-verse1a_lyrics = [
+verse_1_lyrics = [
 	["MIDNIGHT", 			"", 		"",			"",									"",								"YOU COME AND", "PICK ME UP", 		"NO"	],
 	["HEADLIGHTS",		"", 		"",			"", 								"", 							"", 						"", 							""		],
 	["LONG DRIVE",		"", 		"",			"",									"", 							"COULD END IN",	"BURNING FLAMES", "OR"	], 
 	["PARADISE",			"", 		"",			"", 								"", 							"", 						"", 							"FADE"],
-	["IN THE VIEW",		"",			"OH",		"",									"IT'S BEEN A",		"WHILE SINCE",	"I HAVE",					"EVEN"],
+	["IN THE VIEW",		"",			"OH",		"",									"IT'S BEEN A WHILE","SINCE",	"I HAVE",					"EVEN"],
 	["HEARD FROM YOU","", 		"",			"",									"HEARD FROM YOU",	"",							"",								""		],
-	["",			"I SHOULD", 		"JUST TELL YOU TO", "LEAVE CAUSE I", 	"",							"KNOW EX", "ACTLY WHERE IT", "LEADS BUT I"],
-	["",		"WATCH US GO",		"ROUND AND",	"ROUND EACH TIME","",							"", "",				 "YOU GOT THAT"]
+	["",		"I SHOULD",		"JUST TELL YOU TO", "LEAVE CAUSE I", 	"",		"KNOW EX", "ACTLY WHERE IT", "LEADS BUT I"],
+	["",		"WATCH US GO",		"ROUND AND",	"ROUND EACH TIME", "",	"", "",	 "YOU GOT THAT"]
 ]
-
-verse1b_lyrics = ["I SHOULD JUST TELL YOU TO LEAVE CAUSE I", "KNOW EXACTLY WHERE IT LEADS BUT I", "WATCH US GO ROUND AND ROUND EACH TIME", "YOU GOT THAT"]
 
 chorus_lyrics = [
-	["JAMES",	"DEEN", "DAY", 		"DREAM", 				"LOOK IN",	 	"YOUR", 	"EYE",		"AND I GOT THAT"		],
-	["RED",		"LIP",	"CLASS",	"IC",						"THING THAT",	"YOU",		"LIKE",		"AND WHEN WE GO"		],
+	["JAMES",	"DEEN", "DAY", 		"DREAM", 				"LOOK IN",	 	"YOUR EYE", 	"",		"AND I GOT THAT"		],
+	["RED",		"LIP",	"CLASSIC","",							"THING THAT",	"YOU",		"LIKE",		"AND WHEN WE GO"		],
 	["CRASH",	"ING", 	"DOWN",	  "WE COME",			"BACK EV"			"ERY",		"TIME",		"CAUSE WE NEVER GO"	],
 	["OUT",		"OF",		"STYLE",	"WE NEVER GO",	"OUT",				"OF",			"STYLE",	"YOU GOT THE"				],
-	["LONG",	"HAIR",	"SLICKED","BACK", 				"WHITE",			"T",			"SHIRT",	"AND I GOT THAT"		],
+	["LONG",	"HAIR",	"SLICKED","BACK", 				"WHITE T",		"",				"SHIRT",	"AND I GOT THAT"		],
 	["GOOD",	"GIRL", "FAITH",	"AND A", 				"TIGHT",		 	"LITTLE",	"SKIRT",	"AND WHEN WE GO"		],
-	["CRASH",	"ING",  "DOWN",		"WE COME", 			"BACK EV",		"ERY",		"TIME",		"CAUSE WE NEVER GO"	],
-	["OUT",		"OF",		"STYLE",	"WE NEVER GO",	"OUT",				"OF",			"STYLE",	""									]
+	["CRASH",	"ING",  "DOWN",		"WE COME", 			"BACK EVERY",		"",		"TIME",		"CAUSE WE NEVER GO"	],
+	["OUT",		"OF",		"STYLE",	"WE NEVER GO",	"OUT OF",				"STYLE",			"",	""									]
 ]
 
-verse2a_lyrics = ["SO IT GOES", "HE CAN'T KEEP HIS WILD EYES", "ON THE ROAD HMMM", "TAKES ME HOME", "LIGHTS ARE OFF HE'S TAKING", "OFF HIS COAT OOHH YEAH I SAID", "I HEARD, OH! THAT", "YOU BEEN OUT AND ABOUT WITH SOME", "OTHER GIRL", "SOME OTHER GIRL"]
-verse2b_lyrics = ["HE SAYS WHAT YOU'VE HEARD IS TRUE BUT I", "CAN'T HELP THINKING ABOUT YOU AND I", "I SAID I'VE BEEN THERE TOO A FEW TIMES", "YOU GOT THAT"]
+verse_2_lyrics = [
+	["SO IT GOES", 		"", 		"",			"",			"",							"HE CAN'T", 	"KEEP HIS", 	"WILD EYES"		],
+	["ON THE ROAD",		"", 		"",			"", 		"HMMM",					"", 					"", 					""						],
+	["TAKES ME HOME",	"", 		"",			"",			"", 						"LIGHTS ARE",	"OFF HE'S", 	"TAKING"			], 
+	["OFF HIS",				"COAT",	"",			"", 		"OOHH", 				"YEAH",				"",						"I SAID"			],
+	["I HEARD",				"",			"OH",		"THAT",	"YOU BEEN OUT",	"AND ABOUT",  "WITH",				"SOME"				],
+	["OTHER GIRL",		"", 		"",			"",			"SOME OTHER",		"GIRL",				"",						""						],
+	["",		"HE SAYS", "WHAT YOU'VE HEARD IS","TRUE BUT I",		"", "CAN'T STOP", "THINKING ABOUT","YOU AND I"],
+	["",		"I SAID I'VE",		"BEEN THERE",		"TOO A FEW", 		"TIMES",	  "",		"CAUSE",		"YOU GOT THAT"]
+]
 
-def beat_string(num)
-	beat_string = "| -- | "
-	1.upto(num) do |n|
-		# if $measure % 8 == 0 
-		# 	beat_string += " ***************"
-		# elsif $measure % 2 == 0 
-		# 	beat_string += " --"
-		# else
-		# 	beat_string += " **"
-		# end
-		puts "#{beat_string}"
-		beat_string += "-- |"
+outro_lyrics = [
+	["", 		"", 		"",			"",			"",			"", 					"JUST", 				"TAKE ME UP"],
+	["",		"", 		"",			"", 		"",			"YEAH",				"JUST", 				"TAKE ME UP"],
+	["",		"",			"",			"", 		"",			"", 					"",							""					],
+	["",		"",			"",			"", 		"OUT",	"OF STYLE", 	"YOU GOT THAT",	""					]
+]
 
-		# beat_string += ($measure % 2 == 0 ? " --" : " **")
+def beat_string
+
+		puts "#{$beat_string}"
+		$beat_string += "-- "
  		$measure += 1
 		sleep BEAT
-	end
+
 end
 
-def intro(num)
-	4.times do |i|
+def intro
+	16.times do
 		# puts $chords[i]
-		beat_string(num)
+		beat_string
 	end
+	$beat_string = " --"
 end
 
-def verse_1a(lyrics)
-	puts $chords[0]
-	puts lyrics[0]
-	beat_string(5)
-	puts lyrics[1]
-	beat_string(3)
-	puts $chords[1] 
-	puts lyrics[2]
-	beat_string(8)
-	puts $chords[0]
-	puts lyrics[3]
-	beat_string(5)
-	puts lyrics[4]
-	beat_string(3)
-	puts $chords[1]
-	puts lyrics[5]
-	beat_string(8)
-	puts lyrics[6]
-	beat_string(4)
-	puts lyrics[7]
-	beat_string(4)
-	puts lyrics[8]
-	beat_string(4)
-	puts lyrics[9]
-	beat_string(4)	
-end
-
-def verse_1b(lyrics)
-	puts $chords[2]
-	beat_string(1.5)
-	puts lyrics[0]
-	beat_string(2.5)
-	puts $chords[4]
-	beat_string(2.5)
-	puts lyrics[1]
-	beat_string(1.5)
-	puts $chords[1]
-	beat_string(3.5) 
-	puts lyrics[2]
-	beat_string(6)
-	puts lyrics[3]
-	beat_string(1)
-end
-
-def verse(lyrics)
+def verse_chorus(lyrics)
 	8.times do |num|
 		puts lyrics[num]
-		beat_string(1)
+		beat_string
 	end
+
+	$beat_string = " --"
 end
 
 def chorus(lyrics)
@@ -115,30 +78,28 @@ def chorus(lyrics)
 end
 
 
-intro(8)
-# verse(verse1a_lyrics)
-# verse_1b(verse1b_lyrics)
-
+2.times {intro}
 
 8.times do |num|
-	verse(verse1a_lyrics[num])
+	verse_chorus(verse_1_lyrics[num])
 end
 
-# verse_1b(verse1b_lyrics)
-
 8.times do |num|
-	chorus(chorus_lyrics[num])
+	verse_chorus(chorus_lyrics[num])
 end
 
-
-verse_1a(verse2a_lyrics)
-
 8.times do |num|
-	chorus(chorus_lyrics[num])
+	verse_chorus(verse_2_lyrics[num])
 end
 
-intro(8)
-
 8.times do |num|
-	chorus(chorus_lyrics[num])
+	verse_chorus(chorus_lyrics[num])
+end
+
+4.times do |num|
+	verse_chorus(outro_lyrics[num])
+end
+
+4.times do |num|
+	verse_chorus(chorus_lyrics[num])
 end
