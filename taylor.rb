@@ -17,7 +17,7 @@ lyrics = {
   chorus_lyrics: [
     ["JAMES", "DEEN", "DAY",    "DREAM",        "LOOK IN",    "YOUR EYE", "AND",  "I GOT THAT"        ],
     ["RED",   "LIP",  "CLASSIC","",             "THING THAT", "YOU",    "LIKE",   "AND WHEN WE GO"    ],
-    ["CRASH", "ING",  "DOWN",   "WE COME",      "BACK EV"     "ERY",    "TIME",   "CAUSE WE NEVER GO" ],
+    ["CRASH", "ING",  "DOWN",   "WE COME",      "BACK EV",    "ERY",    "TIME",   "CAUSE WE NEVER GO" ],
     ["OUT",   "OF",   "STYLE",  "WE NEVER GO",  "OUT",        "OF",     "STYLE",  "YOU GOT THE"       ],
     ["LONG",  "HAIR", "SLICKED","BACK",         "WHITE",      "T",      "SHIRT",  "AND I GOT THAT"    ],
     ["GOOD",  "GIRL", "FAITH",  "AND A",        "TIGHT",      "LITTLE", "SKIRT",  "AND WHEN WE GO"    ],
